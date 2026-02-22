@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "executable": "./target/thumbv7m-none-eabi/debug/timer-remap",
+            "servertype": "stlink",
+            "toolchainPrefix": "arm-none-eabi",
+            "gdbPath": "gdb",
+            "preLaunchTask": "cargo build",
+            "runToEntryPoint": "main",
+            "svdFile": "${workspaceFolder}/STM32F103.svd"
+        }
+    ]
+}
